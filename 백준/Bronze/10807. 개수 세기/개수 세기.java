@@ -4,19 +4,20 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int N = sc.nextInt();
+		int arr[] = new int[N];
 		
-		int[] nums = new int[N];
 		for(int i = 0; i < N; i++) {
-			nums[i] = sc.nextInt();
+			arr[i] = sc.nextInt();
 		}
 		
 		int v = sc.nextInt();
-		int counts = 0;
-		for(int j = 0; j < N; j++) {
-			if(v == nums[j]) {
-				counts += 1;
+		int count = 0;
+		
+		for(int i = 0; i < N; i++) {
+			if(arr[i] == v) {
+				count++;
 			}
 		}
-		System.out.println(counts);
+		System.out.println(count);
 	}
 }
