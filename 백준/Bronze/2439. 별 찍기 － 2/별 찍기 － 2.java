@@ -8,10 +8,7 @@ public class Main {
 		
 		for(int i = 0; i < N; i++) {
 			System.out.print(" ".repeat(N - i - 1));
-			for(int j = 0; j < i + 1; j++) {
-				System.out.print("*");
-			}
-			System.out.println();
+			System.out.println("*".repeat(i + 1));
 		}
 	}
 }
